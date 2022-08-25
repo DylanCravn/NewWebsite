@@ -11,7 +11,8 @@ const parallax2 = document.getElementById('resumePage');
 //         this.classList.add('clickPriority');
 //     })
 // })
-
+console.log("hello world?");
+ console.log(window.scrollY);
 
 
 window.addEventListener('scroll', ()=> {
@@ -19,7 +20,7 @@ window.addEventListener('scroll', ()=> {
 
     //parallax stuff
     let offset = window.scrollY;
-    console.log('offset' + offset);
+    console.log('offset: ' + offset);
     parallax.style.backgroundPositionY = offset * -0.5 + "px";
     parallax2.style.backgroundPositionY = offset * -0.5 + "px";
     //--------------
@@ -29,6 +30,7 @@ window.addEventListener('scroll', ()=> {
         const sectionHeight = section.clientHeight;
         if(scrollY >= sectionTop){
             current = section.getAttribute('id');
+            console.log("?");
         }
     })
     

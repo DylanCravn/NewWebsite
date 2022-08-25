@@ -4,7 +4,7 @@
 }
 
 section{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -39,11 +39,12 @@ nav .container ul li.active {
 
 .mugshot{
     padding-left: 10%;
-    height: auto;
-    width: 550px;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 .introText{
+    font-size: min(2vw, 20px);
     color: white;
     padding-left: 10%;
     padding-right: 10%;
@@ -75,6 +76,10 @@ nav .container ul li.active {
 .section2{
     height: auto;
     background-color: #F5F6FB;
+}
+
+.section3{
+    height: auto;
 }
 
 .align-items-center{
